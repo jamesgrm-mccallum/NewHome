@@ -1,0 +1,174 @@
+﻿<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="NewHome.Listings"
+             BackgroundColor="FloralWhite"
+             Title="">
+    <Grid RowDefinitions="Auto,*,Auto" Margin="20, 20, 20, 0">
+        <VerticalStackLayout>
+            <!-- Search Bar -->
+            <Frame BorderColor="Transparent" CornerRadius="10" BackgroundColor="Transparent" Padding="1" Margin="10, 10, 10, 10">
+                <SearchBar Placeholder="Find your home..." BackgroundColor="LightGrey" PlaceholderColor="Black" TextColor="Black"/>
+            </Frame>
+            <!-- Filter Buttons -->
+            <HorizontalStackLayout VerticalOptions="Center" HorizontalOptions="Center" Spacing="10" Margin="10, 10, 10, 10">
+                <Button Padding="0,0" BackgroundColor="DarkGreen" TextColor="White" Text="Price" WidthRequest="90" FontSize="12"/>
+                <Button BackgroundColor="DarkGreen" TextColor="White" Text="Location" WidthRequest="90" FontSize="12"/>
+                <Button BackgroundColor="DarkGreen" TextColor="White" Text="Rooms" WidthRequest="90" FontSize="12"/>
+
+            </HorizontalStackLayout>
+            <!-- Near.... -->
+            <Label Text="3 Results match your search near Sesame Street..." VerticalOptions="Center" TextColor="Black" FontSize="20" WidthRequest="400" Margin="50, 0, 0, 15"/>
+        </VerticalStackLayout>
+
+        <!-- Scrolling Cards Section -->
+        <ScrollView x:Name="scrollView"
+                    Grid.Row="1"
+                    Scrolled="OnScrollViewScrolled">
+            <StackLayout>
+                <VerticalStackLayout VerticalOptions="Center" Spacing="25">
+                    <!-- Example Card -->
+                    <!-- IMPORTANT NOTE: NEED AT LEAST 400 pixels of SCREEN WIDTH TO PREVENT CUTTING OFF -->
+                    <VerticalStackLayout>
+                        <Border HeightRequest="200"
+                            WidthRequest="400"
+                            StrokeShape="RoundRectangle 10, 10, 0, 0"
+                            StrokeThickness="0"
+                            Margin="0,0,0,0"
+                            VerticalOptions="Center">
+
+                            <ImageButton Aspect="Fill"
+                                Source="apartment1.jpeg"
+                                HeightRequest="200"
+                                WidthRequest="400"
+                                HorizontalOptions="Center"
+                                Clicked="SendToProperty2"
+                            />
+                        </Border>
+                        <Border HeightRequest="50" 
+                                WidthRequest="400"
+                                StrokeShape="RoundRectangle 0, 0, 10, 10"
+                                StrokeThickness="0"
+                                Margin="0,0,0,0"
+                                VerticalOptions="Center">
+
+                            <Border.Shadow>
+                                <Shadow Brush="Gray"
+                                        Radius="3"
+                                        Offset="0,3"
+                                        Opacity="0.8"/>
+                            </Border.Shadow>
+
+                            <HorizontalStackLayout Spacing="100"  WidthRequest="400" BackgroundColor="White" >
+                                
+                               
+                                <VerticalStackLayout>
+                                    <Label Text="        221B Baker Street" FontSize="15" TextColor="Black"/>
+                                    <Label Text="            1 Bedroom/1 Bath" FontSize="10" TextColor="Black"/>
+                                </VerticalStackLayout>
+                                <VerticalStackLayout>
+                                    <Label Text="   $1550/Month" TextColor="Black" FontSize="15" FontAttributes="Bold"/>
+                                </VerticalStackLayout>
+                            </HorizontalStackLayout>
+                        </Border>
+                        
+                    </VerticalStackLayout>
+                    <VerticalStackLayout>
+                        <Border HeightRequest="200"
+                                WidthRequest="400"
+                                StrokeShape="RoundRectangle 10, 10, 0, 0"
+                                StrokeThickness="0"
+                                Margin="0,0,0,0"
+                                VerticalOptions="Center">
+
+                            <!--HERE-->
+
+                            <ImageButton Aspect="Fill"
+                                Source="house.jpeg"
+                                HeightRequest="200"
+                                WidthRequest="400"
+                                HorizontalOptions="Center"
+                                Clicked="SendToProperty"   
+                            />
+                        </Border>
+                        <Border HeightRequest="50" 
+                                WidthRequest="400"
+                                StrokeShape="RoundRectangle 0, 0, 10, 10"
+                                StrokeThickness="0"
+                                Margin="0,0,0,0"
+                                VerticalOptions="Center">
+
+                            <Border.Shadow>
+                                <Shadow Brush="Gray"
+                                        Radius="3"
+                                        Offset="0,3"
+                                        Opacity="0.8"/>
+                            </Border.Shadow>
+
+                            <HorizontalStackLayout Spacing="100"  WidthRequest="400" BackgroundColor="White" >
+
+
+                                <VerticalStackLayout>
+                                    <Label Text="        123 Sesame Street" FontSize="15" TextColor="Black"/>
+                                    <Label Text="            3 Bedroom/2 Bath" FontSize="10" TextColor="Black"/>
+                                </VerticalStackLayout>
+                                <VerticalStackLayout>
+                                    <Label Text="   $2300/Month" TextColor="Black" FontSize="15" FontAttributes="Bold"/>
+                                </VerticalStackLayout>
+                            </HorizontalStackLayout>
+                        </Border>
+
+                    </VerticalStackLayout>
+
+                    <VerticalStackLayout>
+                        <Border HeightRequest="200"
+                                WidthRequest="400"
+                                StrokeShape="RoundRectangle 10, 10, 0, 0"
+                                StrokeThickness="0"
+                                Margin="0,0,0,0"
+                                VerticalOptions="Center">
+
+                            <ImageButton Aspect="Fill"
+                                Source="home.jpeg"
+                                HeightRequest="200"
+                                WidthRequest="400"
+                                HorizontalOptions="Center"
+                                Clicked="SendToProperty3"
+                            />
+                        </Border>
+                        <Border HeightRequest="50" 
+                                WidthRequest="400"
+                                StrokeShape="RoundRectangle 0, 0, 10, 10"
+                                StrokeThickness="0"
+                                Margin="0,0,0,0"
+                                VerticalOptions="Center">
+
+                            <Border.Shadow>
+                                <Shadow Brush="Gray"
+                                        Radius="3"
+                                        Offset="0,3"
+                                        Opacity="0.8"/>
+                            </Border.Shadow>
+
+                            <HorizontalStackLayout Spacing="100"  WidthRequest="400" BackgroundColor="White" >
+
+                                <VerticalStackLayout>
+                                    <Label Text="        4 Privet Drive" FontSize="15" TextColor="Black"/>
+                                    <Label Text="            2 Bedroom/1 Stair" FontSize="10" TextColor="Black"/>
+                                </VerticalStackLayout>
+                                
+                                <VerticalStackLayout>
+                                    <Label Text="   $1600/Month" TextColor="Black" FontSize="15" FontAttributes="Bold"/>
+                                </VerticalStackLayout>
+                                
+                            </HorizontalStackLayout>
+                        </Border>
+
+                    </VerticalStackLayout>
+                    
+                </VerticalStackLayout>
+            </StackLayout>
+        </ScrollView>
+    </Grid>
+
+
+</ContentPage>

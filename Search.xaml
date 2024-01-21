@@ -1,0 +1,50 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="NewHome.Search"
+             BackgroundColor="FloralWhite">
+
+    <StackLayout VerticalOptions="CenterAndExpand" Margin="20">
+
+        <Image Source="homelogo.png"
+               SemanticProperties.Description="House Image"
+               HeightRequest="200"
+               HorizontalOptions="Center"/>
+
+        <Label Text="NewHome" FontSize="24" TextColor="#004225" HorizontalOptions="Center" Margin="0,0,0,10"/>
+
+        <Grid>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="*" />
+                <ColumnDefinition Width="Auto" />
+            </Grid.ColumnDefinitions>
+
+            <Entry x:Name="SearchEntry"
+                   Placeholder="Search..."
+                   PlaceholderColor="Black"
+                   BackgroundColor="LightGray"
+                   TextColor="Black"
+                   FontSize="20"/>
+            
+            <!--<Button x:Name="SearchButton"
+                    BackgroundColor="#004225"
+                    TextColor="White"
+                    
+                    WidthRequest="70"
+                    HeightRequest="40"
+                    Text="Search"
+                    Grid.Column="1"/>-->
+            <Button x:Name="SearchButton"
+                    BackgroundColor="#076839"
+                    Text="GO!"
+                    FontSize="Body"
+                    TextColor="White"
+                    Clicked="OnSearchClicked"
+                    WidthRequest="70"
+                    HeightRequest="40"
+                    Grid.Column="1"/>
+        </Grid>
+    </StackLayout>
+</ContentPage>
+
+

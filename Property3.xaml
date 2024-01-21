@@ -1,0 +1,160 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="NewHome.Property3"
+             BackgroundColor="FloralWhite">
+
+    <ScrollView>
+        <VerticalStackLayout
+            Spacing="25"
+            Padding="30,0"
+            VerticalOptions="Start">
+
+            <Image
+                Source="home.jpeg"
+                SemanticProperties.Description="4 Privet Drive"
+                HeightRequest="325"
+                HorizontalOptions="Center"
+                Margin="0,0,0,0"/>
+
+            <Label
+                Text="4 Privet Drive"
+                Margin="0,0,0,0"
+                TextColor="Black"
+                SemanticProperties.HeadingLevel="Level1"
+                CharacterSpacing="0"
+                FontSize="36"
+                FontFamily="TimesNewRoman"
+                FontAttributes="Bold"
+                HorizontalOptions="Start"
+            />
+
+            <BoxView Color="Black" HeightRequest="1" HorizontalOptions="FillAndExpand" />
+
+            <Label
+                Text="Price: $1,600"
+                Padding="0"
+                Margin="0,0,0,0"
+                TextColor="Black"
+                SemanticProperties.HeadingLevel="Level1"
+                FontSize="24"
+                FontFamily="TimesNewRoman"
+                FontAttributes="Bold"
+                HorizontalOptions="Start" />
+
+            <BoxView Color="Black" HeightRequest="1" HorizontalOptions="Fill" />
+
+            <Label
+                Text="Description"
+                Margin="0,0,0,0"
+                TextColor="Black"
+                SemanticProperties.HeadingLevel="Level1"
+                FontSize="24"
+                FontFamily="TimesNewRoman"
+                FontAttributes="Bold"
+                HorizontalOptions="Start"
+            />
+
+            <Frame
+                BackgroundColor="#e6e1d8"
+                CornerRadius="10"
+                BorderColor="FloralWhite"
+                Padding="15"
+                HorizontalOptions="Start"
+                >
+
+
+                <Label
+                    Text="Located in the enchanting village of Godric's Hollow, Harry Potter's
+childhood home is a cozy and magical haven. The charming cottage, hidden behind an inviting facade
+of ivy-covered stone, emanates warmth and nostalgia. Inside, whimsical details abound, from the
+crackling fireplace to the assortment of mystical trinkets. A haven of love and memories, the Potter
+residence is a symbol of resilience and familial ties, echoing with the echoes of a remarkable wizarding legacy."
+                    Margin="0,0,0,10"
+                    TextColor="Black"
+                    SemanticProperties.HeadingLevel="Level1"
+                    FontSize="14"
+                    FontFamily="TimesNewRoman"
+                    HorizontalOptions="Start"
+                />
+
+            </Frame>
+
+            <BoxView Color="Black" HeightRequest="1" HorizontalOptions="FillAndExpand" />
+
+            <Label
+                Text="Size"
+                Margin="0,0,0,0"
+                TextColor="Black"
+                SemanticProperties.HeadingLevel="Level1"
+                FontSize="24"
+                FontFamily="TimesNewRoman"
+                FontAttributes="Bold"
+                HorizontalOptions="Start"
+            />
+
+            <Frame
+                BackgroundColor="#e6e1d8"
+                CornerRadius="10"
+                BorderColor="FloralWhite"
+                Padding="15"
+                HorizontalOptions="Start"
+                WidthRequest="325"
+                >
+
+
+                <Label
+                    Text="2100 sq ft."
+                    Margin="0,0,0,0"
+                    TextColor="Black"
+                    SemanticProperties.HeadingLevel="Level1"
+                    FontSize="14"
+                    FontFamily="TimesNewRoman"
+                    HorizontalOptions="Start"
+                />
+
+            </Frame>
+
+            <BoxView Color="Black" HeightRequest="1" HorizontalOptions="FillAndExpand" />
+
+            <Label
+                Text="Listing By:"
+                Margin="0,0,0,0"
+                TextColor="Black"
+                SemanticProperties.HeadingLevel="Level1"
+                FontSize="24"
+                FontFamily="TimesNewRoman"
+                FontAttributes="Bold"
+                HorizontalOptions="Start"
+            />
+
+            <Label
+                Text="Hogwarts Tm."
+                Margin="0,0,0,0"
+                TextColor="Black"
+                SemanticProperties.HeadingLevel="Level1"
+                FontSize="14"
+                FontFamily="TimesNewRoman"
+                HorizontalOptions="Start"
+            />
+
+            <Entry
+                x:Name="MessageBtn"
+                BackgroundColor="#e6e1d8"
+            
+                Completed="OnMessage"
+                FontFamily="TimesNewRoman"
+                FontAttributes="Bold"
+                Placeholder="Message..."
+                PlaceholderColor="DarkGrey"
+                
+                TextColor="Black"
+                
+            />
+            
+
+        </VerticalStackLayout>
+    </ScrollView>
+
+</ContentPage>
+

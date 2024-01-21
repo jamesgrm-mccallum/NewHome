@@ -1,0 +1,161 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="NewHome.Property"
+             BackgroundColor="FloralWhite">
+
+    <ScrollView>
+        <VerticalStackLayout
+            Spacing="25"
+            Padding="30,0"
+            VerticalOptions="Start">
+
+            <Image
+                Source="house.jpeg"
+                SemanticProperties.Description="123 Sesame St."
+                HeightRequest="325"
+                HorizontalOptions="Center"
+                Margin="0,0,0,0"/>
+
+            <Label
+                Text="123 Sesame St."
+                Margin="0,0,0,0"
+                TextColor="Black"
+                SemanticProperties.HeadingLevel="Level1"
+                CharacterSpacing="0"
+                FontSize="36"
+                FontFamily="TimesNewRoman"
+                FontAttributes="Bold"
+                HorizontalOptions="Start"
+            />
+
+            <BoxView Color="Black" HeightRequest="1" HorizontalOptions="FillAndExpand" />
+
+            <Label
+                Text="Price: $2,300"
+                Padding="0"
+                Margin="0,0,0,0"
+                TextColor="Black"
+                SemanticProperties.HeadingLevel="Level1"
+                FontSize="24"
+                FontFamily="TimesNewRoman"
+                FontAttributes="Bold"
+                HorizontalOptions="Start" />
+
+            <BoxView Color="Black" HeightRequest="1" HorizontalOptions="Fill" />
+
+            <Label
+                Text="Description"
+                Margin="0,0,0,0"
+                TextColor="Black"
+                SemanticProperties.HeadingLevel="Level1"
+                FontSize="24"
+                FontFamily="TimesNewRoman"
+                FontAttributes="Bold"
+                HorizontalOptions="Start"
+            />
+
+            <Frame
+                BackgroundColor="#e6e1d8"
+                CornerRadius="10"
+                BorderColor="FloralWhite"
+                Padding="15"
+                HorizontalOptions="Start"
+                >
+
+
+                <Label
+                    Text="Nestled near Union Station, this inviting three-bedroom, two-bathroom house offers
+a cozy urban retreat. The living room, adorned with plush furnishings, provides a perfect
+space to relax. The kitchen, bathed in natural light, features modern appliances and a view
+of the nearby CN Tower. Three bedrooms, each a tranquil haven, boast soft linens and tasteful
+decor. Outside, a quaint backyard patio adds a touch of nature. With seamless connectivity to
+Union Station, this house is an ideal blend of comfort and urban living."
+                    Margin="0,0,0,10"
+                    TextColor="Black"
+                    SemanticProperties.HeadingLevel="Level1"
+                    FontSize="14"
+                    FontFamily="TimesNewRoman"
+                    HorizontalOptions="Start"
+                />
+
+            </Frame>
+
+            <BoxView Color="Black" HeightRequest="1" HorizontalOptions="FillAndExpand" />
+
+            <Label
+                Text="Size"
+                Margin="0,0,0,0"
+                TextColor="Black"
+                SemanticProperties.HeadingLevel="Level1"
+                FontSize="24"
+                FontFamily="TimesNewRoman"
+                FontAttributes="Bold"
+                HorizontalOptions="Start"
+            />
+
+            <Frame
+                BackgroundColor="#e6e1d8"
+                CornerRadius="10"
+                BorderColor="FloralWhite"
+                Padding="15"
+                HorizontalOptions="Start"
+                WidthRequest="325"
+                >
+
+
+                <Label
+                    Text="1800 sq ft."
+                    Margin="0,0,0,0"
+                    TextColor="Black"
+                    SemanticProperties.HeadingLevel="Level1"
+                    FontSize="14"
+                    FontFamily="TimesNewRoman"
+                    HorizontalOptions="Start"
+                />
+
+            </Frame>
+
+            <BoxView Color="Black" HeightRequest="1" HorizontalOptions="FillAndExpand" />
+
+            <Label
+                Text="Listing By:"
+                Margin="0,0,0,0"
+                TextColor="Black"
+                SemanticProperties.HeadingLevel="Level1"
+                FontSize="24"
+                FontFamily="TimesNewRoman"
+                FontAttributes="Bold"
+                HorizontalOptions="Start"
+            />
+
+            <Label
+                Text="Everything Realty Co."
+                Margin="0,0,0,0"
+                TextColor="Black"
+                SemanticProperties.HeadingLevel="Level1"
+                FontSize="14"
+                FontFamily="TimesNewRoman"
+                HorizontalOptions="Start"
+            />
+
+            <Entry
+                x:Name="MessageBtn"
+                BackgroundColor="#e6e1d8"
+            
+                Completed="OnMessage"
+                FontFamily="TimesNewRoman"
+                FontAttributes="Bold"
+                Placeholder="Message..."
+                PlaceholderColor="DarkGrey"
+                
+                TextColor="Black"
+                
+            />
+            
+
+        </VerticalStackLayout>
+    </ScrollView>
+
+</ContentPage>
+

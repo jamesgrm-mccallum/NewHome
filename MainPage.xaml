@@ -1,0 +1,53 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="NewHome.MainPage"
+             BackgroundColor="FloralWhite">
+
+
+
+
+    <ScrollView>
+        <ScrollView.GestureRecognizers>
+            <TapGestureRecognizer Tapped="OnPageTapped"/>
+        </ScrollView.GestureRecognizers>
+
+        <VerticalStackLayout
+            Spacing="25"
+            Padding="30,0"
+            VerticalOptions="Center">
+
+            <Image
+                Source="homelogo.png"
+                SemanticProperties.Description="House image"
+                HeightRequest="200"
+                HorizontalOptions="Center" />
+
+
+            <Label
+                Text="Welcome to NewHome"
+                SemanticProperties.HeadingLevel="Level2"
+                SemanticProperties.Description="Welcome to dot net Multi-platform App UI"
+                FontSize="30"
+                FontFamily="TimesNewRoman"
+                HorizontalOptions="Center"
+                TextColor="#004225"/>
+
+            <Button
+                x:Name="CounterBtn"
+                Text="Tap anywhere to begin"
+                SemanticProperties.Hint="Counts the number of times you click"
+                Clicked="OnCounterClicked"
+                HorizontalOptions="Center"
+                BackgroundColor="FloralWhite"
+                FontFamily="TimesNewRoman"
+                TextColor="#004225"
+                FontSize="14"/>
+        </VerticalStackLayout>
+
+
+    </ScrollView>
+
+
+
+</ContentPage>
